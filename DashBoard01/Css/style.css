@@ -1,0 +1,819 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Oxanium', 'Poppins', sans-serif ;
+    text-decoration: none;
+}
+html{
+    font-size: 62.5%;
+    background:#EBEDF2;
+}
+.container {
+    height: 100vh;
+    width: 80%;
+    border: .1rem solid black;
+    margin: 0 auto;
+    overflow: hidden;
+}
+/* Começo da Header */
+#header {
+    width:100%; /* aqui ele vai limitar a area que teremos */
+    height: 4.2rem;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+.header-l {
+    width:40rem;
+    height: 4.2rem;
+    display:flex ;
+}
+.logo {
+    width: 5rem;
+    height: 4rem;
+    background: #dedede;
+    position: relative;
+    display: flex;
+    border-top-right-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.bola {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: .1rem .3rem .5rem .2rem #bfbfbf;
+    background: #fff;
+    position: absolute;
+    left: 16.5rem;
+    top:1.1rem;
+}
+.pesquisa {
+    margin-left: 5rem;
+    margin-right: .9rem;
+    font-size: 1.5rem;
+    width: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-l input {
+    width: 40rem;
+    border:none;
+    outline:none;
+}
+.header-r {
+    width: 20rem;
+    height: 4.2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2rem;
+    position: relative;
+}
+.lingua {
+    width: 5.2rem;
+    height: 4.2rem;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    font-size: 0.8rem;
+}
+.bell {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 100%;
+    background: rgb(245, 190, 87);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 0.35rem;
+    color: #fff;
+    right:6rem;
+    top: 1rem;
+}
+.you {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    background-image: url(../img/icon2.jpg);
+    background-size: cover;
+}
+/* Fim da Header */
+/* Começo da Nav */
+#nav {
+    margin-top: 1rem;
+    width:100%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-l {
+    width:32rem;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+.back {
+    margin-left: 1rem;
+    width: 5.5rem;
+    height: 4rem;
+}
+.caminho {
+    width: 23.7rem;
+    height: 4rem;
+}
+.nav-r {
+    width: 32rem;
+    height: 4rem;
+    display: flex;
+    justify-content: flex-end;
+}
+.nav-r button {
+    color:#fff;
+    border: none;
+    width: 9rem;
+    height: 3rem;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 2rem;
+}
+.nav-r button i{
+    margin-right: .5rem;
+}
+.nav-r button:nth-child(1){
+    background: #3C337D;
+}
+.nav-r button:nth-child(2){
+    background: #E82D79;
+}
+.nav-r button:nth-child(3){
+    background: #D5D6DA;
+}
+/* fim da Nav */
+.content {
+    width: 100%;
+    height: calc(100vh - 8.4rem);
+    display: flex;
+    overflow: hidden;
+}
+/*Começo da Aside (menu lateral) */
+#aside {
+    width: 10rem;
+    height: 57.9rem;
+    display: flex;
+    flex-direction: column;
+}
+.aside-l {
+    width: 7rem;
+    height: 45rem;
+    border-top-right-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: center;
+    background: #5e4ae3;
+}
+.aside-l i {
+    font-size: 2rem;
+    padding-top:1.3rem ;
+    color: #fff;
+}
+.not {
+    width: 1.9rem;
+    height: 1.9rem;
+    border-radius: 100%;
+    background: rgb(245, 190, 87);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 0.9rem;
+    bottom: 27.2rem;
+    left: 17.4rem;
+}
+.aside-d {
+    border: .2rem solid purple;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 100%;
+    background-image: url(../img/icon2.jpg);
+    background-size: cover;
+    display: flex;
+    position: absolute;
+    right: 113.5rem;
+    bottom: 2.9rem;
+}
+.white {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100%;
+    background:#fff;
+    display: flex;
+    position: absolute;
+    right: 113.5rem;
+    bottom: 2.9rem;
+    box-shadow: -.2rem .1rem 1.5rem .2rem rgb(70, 70, 70);
+}
+.verde {
+    width: .8rem;
+    height: .8rem;
+    border-radius: 100%;
+    background: green;
+    display: flex;
+    position: absolute;
+    right: 113.84rem;
+    bottom: 3.2rem;
+    justify-content: center;
+}
+.nome  {
+    font-size: 1rem;
+    position: absolute;
+    right: 114rem;
+    bottom: 1.2rem;
+    justify-content: center;
+}
+/*Fim da Aside (Menu Lateral)*/
+/*Começo do Menu*/
+#sec1 {
+    width: 30rem;
+    height: 100%;
+    border-radius: 1rem;
+}
+.menu {
+    margin-top: .5rem;
+    padding-top: 0.5rem;
+    height: 46rem;
+    width: 23rem;
+    border-radius: 2rem;
+    border-top-left-radius:1rem ;
+    box-shadow: .1rem .1rem 1rem rgb(128, 128, 128);
+    background: #fff;
+}
+.m-l { /*linha 89 do html*/
+    margin: .65rem;
+    height: 3rem;
+    width: 89%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    border-radius: 0.3rem;
+    position: relative;
+}
+.m-l i {
+    display: flex;
+    text-align: center;
+    font-size: 1.7rem;
+    margin-left: 1.2rem;
+    margin-right:0.8rem;
+    margin-bottom: 0.6rem;
+}
+.m-l:nth-child(1) i {
+    margin-left: 1rem;
+}
+.m-l:nth-child(2) i{
+    margin-right:1.25rem;
+}
+.m-l:nth-child(6) i {
+    margin-right:1rem;
+}
+.m-l:nth-child(7) i {
+    margin-left: 1.1rem;
+    margin-right:0.86rem;
+}
+.m-l:nth-child(8) i {
+    margin-right:1.1rem;
+}
+.m-l:hover {
+    background: #5e4ae3;
+    color: #fff;
+}
+.not-m {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100%;
+    background: rgb(255, 26, 102);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 1rem;
+    text-align: center;
+    right: 1rem;
+}
+.not-m:hover {
+    background: #5e4ae3;
+}
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.buttons button{
+    width: 8rem;
+    height: 3rem;
+    border-radius: 0.3rem;
+}
+.buttons button:nth-child(1){
+    border: none;
+    background: #5e4ae3;
+    color: #fff;
+}
+.buttons button:nth-child(2){
+    border: .1rem solid #5e4ae3;
+    background: #fff;
+    color: #5e4ae3;
+}
+.buttons button:nth-child(1):hover {
+    border: .1rem solid #5e4ae3;
+    background: #fff;
+    color: #5e4ae3;
+}
+.buttons button:nth-child(2):hover {
+    background: #5e4ae3;
+    color: #fff;
+}
+.line {
+    border-bottom: .2rem dashed #D5D6DA;
+    margin-top:1.2rem;
+    margin-left: 1.2rem;
+    margin-bottom: 1.2rem;
+    width: 20rem;
+}
+.menu-b {
+    height: 6.4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.img {
+    margin-left: 3rem;
+    height: 5.9rem;
+    width: 6.9rem;
+    background-image: url(../img/visuel_declaration_activite_0.png);
+    background-size: cover;
+}
+.menu-b-l {
+    
+    height: 20rem;
+    width: 10rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.menu-b-l button {
+    border: none;
+    height: 3rem;
+    width: 8.2rem;
+    font-size: 1.1rem;
+    border-radius: .2rem;
+    margin-right: 1.5rem;
+}
+.menu-b-l button i {
+    margin-right: .7rem;
+}
+.menu-b-l a{
+    margin-bottom: 12.5rem;
+    margin-right: 1.5rem;
+    font-size: 1.2rem;
+    text-decoration:underline;
+}
+.space {
+    border-bottom: .2rem solid #D5D6DA;
+    margin-top:1.2rem;
+    margin-left: 1.2rem;
+    width: 20rem;
+}
+.space-1 {
+    border-bottom: .2rem solid #ff0000;
+    width: 10rem;
+    position: absolute;
+}
+.space h3{
+    position: absolute;
+    font-size: 1rem;
+    margin-top: .5rem;
+}
+.ad {
+    margin-top: .5rem;
+    height: 8rem;
+    width: 23rem;
+    border-radius: 2rem;
+    background-color: #3C337D;
+    box-shadow: .1rem .1rem 1rem rgb(128, 128, 128);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+.ad h3:nth-child(1){
+    margin-top: 1rem;
+    margin-left: 2rem;
+    font-size: 1.38rem;
+}
+.ad h3:nth-child(2) {
+    margin-left: 2rem;
+    font-size: .9rem;
+}
+.ad i{
+    position: absolute;
+    right: 2rem;
+    top: 1.1rem;
+    font-size: 1.3rem;
+}
+.ad a {
+    position: absolute;
+    top: 6rem;
+    left: 2rem;
+    font-size: 1rem;
+    color: hsl(51, 100%, 64%);
+    text-decoration: underline;
+}
+#text1 {
+    margin-top: .2rem;
+    font-size:medium;
+    font-weight: bold;
+}
+/* Começo do Main */
+#main {
+    width:calc(100vw - 40.2rem);
+    height: 100%;
+}
+.text {
+    /*border: .2rem solid rgb(0, 255, 55); */
+    height: 2rem;
+    width: 71rem;
+    text-align: end;
+    margin-top: .2rem;   
+}
+.icons {
+    height: 19%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.icon {
+    margin: .2rem;
+    box-shadow: .1rem .1rem 1rem rgb(128, 128, 128);
+    height: 10rem;
+    width: 12rem;
+    border-radius: 2rem;
+    background:#FBD1E4;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon:nth-child(2){
+    background:#D5CEFF;
+}
+.icon:nth-child(3){
+    background:#CBF1B6;
+}
+.icon:nth-child(4){
+    background:#FCEDC4;
+}
+.icon:nth-child(5){
+    background:#C4E7F8;
+}
+.cicle {
+    border-radius: 100%;
+    height: 7rem;
+    width: 7rem;
+    display: flex;
+    background: rgb(198,164,179);
+    background: linear-gradient(#F8ADCF, #ffc9e1);
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5rem;
+}
+.icon:nth-child(2) .cicle {
+    background: rgb(107, 103, 128);
+    background: linear-gradient(#C4BAFF, #d1c9ff);
+}
+.icon:nth-child(3) .cicle {
+    background: rgb(198,164,179);
+    background: linear-gradient(#AADB8D, #C2EBAB);
+}
+.icon:nth-child(4) .cicle {
+    background: rgb(198,164,179);
+    background: linear-gradient(#F1CE81, #FBE7B8);
+}
+.icon:nth-child(5) .cicle {
+    background: rgb(198,164,179);
+    background: linear-gradient(#A6D6EE, #BAE1F5);
+}
+.star {
+    position: absolute;
+    top: 7.9rem;
+    left: 1rem;
+    font-size: 1.2rem;
+    color: #fff;
+}
+.ellipsis {
+    position: absolute;
+    top: 0.8rem;
+    right: 1.5rem;
+    font-size: 1.2rem;
+}
+.desc {
+    height: 1.9rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.desc1 {
+    margin: .2rem;
+    width: 12rem;
+    border-radius: 2rem;
+    text-align: center;
+    color:black;
+    font-weight: bold;
+}
+.recentxt {
+    height: 2rem;
+    width: 71rem;
+    margin-top: .2rem;
+    font-size: medium;
+    font-weight: bold;
+}
+.recent {
+    margin-top: .5rem;
+    height: 19%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.recent-1 {
+    margin: .2rem;
+    box-shadow: .1rem .1rem 1rem rgb(128, 128, 128);
+    height: 8.5rem;
+    width: 20rem;
+    border-radius: 1.2rem;
+    background: #fff;
+    position: relative;
+}
+.filestxt {
+    height: 2rem;
+    width: 71rem;
+    margin-top: .2rem;
+    font-size: medium;
+    font-weight: bold;
+}
+.tittle {
+    display: flex;
+    position: relative;
+}
+.tittle i {
+    margin-top:1rem;
+    margin-left: 1rem;
+    font-size: 2.1rem;
+    color: rgb(78, 149, 255);
+}
+.tittle h3 {
+    margin-right: 2rem;
+    margin-left: 1rem;
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
+}
+.info{
+    display: flex;
+    margin-top: .9rem;
+}
+.info h3 {
+    margin-left: 1rem;
+    font-size: .9rem;
+    color: #868686;
+}
+.info a {
+    font-size: .9rem;
+}
+.info i {
+    position: absolute;
+    bottom: 6.5rem;
+    left: 18.5rem;
+    font-size: 1.2rem;
+}
+/*Não consegui mexer nessa parte para usar o nth*/
+.photo {
+    border-radius: 100%;
+    width: 2.2rem;
+    height: 2.2rem;
+    margin-left: 1rem;
+    margin-top: .9rem;
+    background-image: url(../img/icon1.jpg);
+    background-size: cover;
+}
+.photo1 {
+    border-radius: 100%;
+    width: 2.2rem;
+    height: 2.2rem;
+    position: absolute;
+    background-image: url(../img/icon2.jpg);
+    background-size: cover;
+    bottom: .3rem;
+    left:2rem;
+}
+.photo2 {
+    border-radius: 100%;
+    width: 2.2rem;
+    height: 2.2rem;
+    position: absolute;
+    background-image: url(../img/icon3.jpg);
+    background-size: cover;
+    bottom: .3rem;
+    left:3rem;
+}
+.photo3 {
+    border-radius: 100%;
+    width: 2.2rem;
+    height: 2.2rem;
+    position: absolute;
+    background-image: url(../img/icon4.png);
+    background-size: cover;
+    bottom: .3rem;
+    left:4rem;
+}
+.photo4 {
+    border-radius: 100%;
+    width: 2.2rem;
+    height: 2.2rem;
+    position: absolute;
+    background-image: url(../img/icon5.png);
+    background-size: cover;
+    bottom: .3rem;
+    left:5rem;
+}
+.file {
+    position: absolute;
+    left: 15rem;
+    bottom: .4rem;
+    font-size: .7rem;
+}
+/*Começo dos Files */
+.files {
+    margin-top: .5rem;
+    height: 6.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.cfile {
+    margin: .2rem;
+    box-shadow: .1rem .1rem 1rem rgb(128, 128, 128);
+    height: 5.5rem;
+    width: 20rem;
+    border-radius: 2rem;
+    background: #fff;
+    position: relative;
+}
+.cfile i{
+    margin-top: .8rem;
+    margin-left: 1.5rem;
+}
+.cfile h3 {
+    position: absolute;
+    top: 1.2rem;
+    left: 4rem;
+}
+.cfile h4 {
+    position: absolute;
+    top: 3.2rem;
+    left: 1.6rem;
+    font-size: .8rem;
+    color: #868686;
+}
+.ellipsis-1 {
+    position: absolute;
+    bottom: 2.9rem;
+    right: 1rem;
+}
+.star-f {
+    position: absolute;
+    top: 2.5rem;
+    right: 1.3rem;
+    color: #868686;
+}
+.icon-f {
+    font-size: 2rem;
+}
+.friends {
+    margin-top: .5rem;
+    margin-left: 2rem;
+    height: 18rem;
+    width: 69rem;
+    border-radius: 1.2rem;
+    box-shadow: .1rem .1rem 1rem rgb(128, 128, 128);
+    background: #fff;
+}
+.hud {
+    margin: .2rem;
+    height: 4rem;
+    width: 66rem;
+    margin-left: 1rem;
+    background: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color:#868686;
+}
+.hud h5:nth-child(3){
+    margin-left: 2rem;
+}
+.friends1 {
+    margin: .2rem;
+    margin-left: 1.5rem;
+    border-top: .2rem dashed #bfbfbf;
+    padding-left: 2.3rem;
+    height: 4rem;
+    width: 66rem;
+    background: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color:#868686;
+    position: relative;
+}
+.friends1 h5{
+    margin-left: 4.7rem;
+}
+.friends1 h5:nth-child(1){
+    color: #000;
+    border-left: 3rem;
+}
+.friends1 h5:nth-child(2){
+    color: #000;
+    border-left: 3rem;
+}
+.friends1 h5:nth-child(5){
+    color: #000;
+    border-left: 3rem;
+}
+.icon-friends {
+    margin-left: 4.4rem;
+    margin-right: 4rem;
+    border-radius: 100%;
+    width: 2.2rem;
+    height: 2.2rem;
+    background-image: url(../img/icon1.jpg);
+    background-size: cover;
+    position: relative;
+}
+.friends1:nth-child(2) .icon-friends{
+    background-image: url(../img/icon5.png);
+    background-size: cover;
+}
+.friends1:nth-child(3) .icon-friends{
+    background-image: url(../img/icon2.jpg);
+    background-size: cover;
+}
+.info-files {
+    position: absolute;
+    left: 17.8rem;
+}
+.butto {
+    margin-left: 7rem;
+    width: 6rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.butto button{
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: .5rem;
+}
+.butto button:nth-child(1){
+    width: 2.5rem;
+    height: 2.5rem;
+    color: #5e4ae3;
+}
+.butto button:nth-child(2){
+    width: 2.5rem;
+    height: 2.5rem;
+    color: #E82D79;
+}
